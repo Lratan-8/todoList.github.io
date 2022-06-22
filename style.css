@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 214, 255);
+    flex-direction: column;
+}
+
+#toDoBody{
+    margin-top: 80px;
+    width: 500px;
+    height: 100px;
+    /* background-color: rgb(235, 232, 232); */
+    background-image: linear-gradient(rgb(255, 170, 255) 1% , purple );
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid ; */
+    border-radius: 10px;
+    box-shadow: -10px -10px 100px 5px black ;
+
+}
+
+#input{
+    height: 40px;
+    border-radius: 10px;
+    width: 320px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+#addItem{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#addItem:hover{
+    cursor: pointer;
+}
+
+
+
+ul{
+    padding: 0px;
+    list-style-type: none;
+    position: relative;
+    width: 500px;
+    margin: 0;
+    margin-top: 10px;
+    background-color: purple;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+li{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    font-size: 25px;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-height: 50px;
+    background-color: rgb(233, 222, 233);
+    padding: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    color: rgb(44, 44, 44);
+
+}
+
+li input{
+    transform: scale(1.5);
+    margin: 0;
+    accent-color: white;
+    
+}
+
+.delBtn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 10px purple;
+    
+}
+
+#tCounter{
+    display: flex;
+    width: 500px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(29, 28, 28);
+}
+
+
