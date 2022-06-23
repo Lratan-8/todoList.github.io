@@ -3,12 +3,14 @@
 
 
 let counter = 0;
+let cCounter = 0;
 
 let tTasks = document.getElementById('totalTasks');
+let cTasks = document.getElementById('completedTasks');
 
 function changeTaskNum(){
     tTasks.innerText = 'Total Tasks: ' + counter;
-    
+    cTasks.innerText = 'Completed Tasks: ' + cCounter;
 }
 
 
@@ -75,20 +77,7 @@ addBtn.addEventListener('click', function(){
     }
 
 
-    function completedItem(event){
-        let chelist = event.target.parentElement;
-
-            
-        chelist.style.backgroundColor= 'black';
-        chelist.style.opacity = '0.5';
-
-        chelist.style.transitionDuration = '0.6s';
-        
-        chelist.style.textDecoration= 'line-through';
-        
-        chelist.style.color = 'rgb(233, 222, 233)';
-
-    }
+   
 
 });
 
@@ -102,7 +91,24 @@ function delItem(event){
     event.target.parentElement.remove();
     console.log("btn clicked")
     counter--;
+    changeTaskNum();
 
+}
+
+
+
+function completedItem(event){
+    let chelist = event.target.parentElement;
+
+    chelist.style.backgroundColor= 'black';
+    chelist.style.opacity = '0.5';
+
+    chelist.style.transitionDuration = '0.8s';
+    
+    chelist.style.textDecoration= 'line-through';
+    
+    chelist.style.color = 'rgb(233, 222, 233)';
+    cCounter++;
     changeTaskNum();
 
 }
